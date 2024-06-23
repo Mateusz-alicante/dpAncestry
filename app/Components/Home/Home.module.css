@@ -5,3 +5,12 @@
     justify-content: center;
     height: 100vh;
 }
+
+@media only screen 
+and (max-device-width: 1000px)
+{ 
+    .container {
+       margin-top: 7em;
+    }
+    
+}

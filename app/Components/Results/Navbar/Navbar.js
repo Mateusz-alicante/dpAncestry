@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Center, Tooltip, UnstyledButton, Stack, rem } from '@mantine/core';
 
 import { MantineLogo } from '@mantinex/mantine-logo';
@@ -27,9 +27,13 @@ function NavbarLink({ icon: Icon, label, active, onClick }) {
 
 
 
-export default ({ tabs }) => {
+export default ({ tabs, defaultActive }) => {
     const [data, setData] = useAtom(dataAtom)
   const [active, setActive] = useState(2);
+
+  useEffect(() => {
+    setActive(defaultActive);
+  }, [defaultActive]);
 
   const links = tabs.map((link, index) => (
     <NavbarLink

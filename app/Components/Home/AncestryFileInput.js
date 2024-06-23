@@ -16,6 +16,7 @@ export default (props) => {
         borderRadius: '12px', // Optional: if you want rounded corners
         padding: '20px', // Optional: for internal spacing
         textAlign: 'center', // Optional: if you want the text aligned to the center
+        margin: "3em"
         // Add other styling as needed
       }}
       {...props}

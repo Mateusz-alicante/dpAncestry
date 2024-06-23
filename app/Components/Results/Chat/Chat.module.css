@@ -4,6 +4,7 @@
     justify-content: space-between; /* Aligns children (content and input) at the start and end respectively */
     height: 100vh; /* Adjust the height as needed, 100vh for full viewport height */
     padding: 10px; /* Optional, for some spacing */
+    width: 100%;
 }
 
 .inputContainer {

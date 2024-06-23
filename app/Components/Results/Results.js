@@ -31,7 +31,7 @@ export default () => {
     return (
     <>
         <div className={styles.resultsContainer}>
-        <Navbar tabs={tabs} />
+        <Navbar tabs={tabs} defaultActive={1} />
         <div className={styles.resultsTabs}>
             {activeTab === "Ancestry" && <AncestryResults />}
             {activeTab === "Chat" && <Chat />}

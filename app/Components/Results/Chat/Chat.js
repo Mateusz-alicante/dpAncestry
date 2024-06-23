@@ -43,7 +43,7 @@ export default () => {
             {messages.map((msg, index) => (
                 <div key={index} className={styles.message}>
                 <div className={styles[msg.from]}>
-                    <p dangerouslySetInnerHTML={msg}></p>
+                    <p dangerouslySetInnerHTML={{__html: msg.message}}></p>
                 </div>
                 </div>
             ))}
@@ -51,7 +51,7 @@ export default () => {
         <div className={styles.inputContainer}>
             <TextInput
             style={{
-                width: "50em",
+                width: "80%",
                 margin: "0 1em",
             }}
             leftSectionPointerEvents="none"
